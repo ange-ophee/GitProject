@@ -1,0 +1,12 @@
+.ctb-button {
+    background-color: #22ff77;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: right;
+}
+
+body {
+    background-image: url("photos/images (1).png");
+}

@@ -1,0 +1,100 @@
+body {
+    background-image: url("photos/images (3).jpeg");
+    background-size: cover ;
+}
+
+h2 {
+    color: darkorange;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out forwards, slideInUp 1s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: rotateIn 1s ease-in-out forwards;
+    opacity: 0;
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease;
+}
+
+.event-card img:hover {
+    transform: scale(1.05); /* Agrandit légèrement l'image */
+    transform: translateX(0);
+}
+
+.events-section {
+    padding: 60px 20px;
+    /*background-color: #555;*/
+    text-align: center;
+}
+
+.events-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+}
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .events-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-card {
+        width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Appliquer l'animation aux cartes d'événements */
+.event-card {
+    animation: fadeIn 1s ease-in forwards;
+    opacity: 0; /* Initialement invisible */
+}
+
+/* Option : Ajouter un délai d'animation */
+.event-card:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.event-card:nth-child(2) {
+    animation-delay: 0.6s;
+}
+.event-card:nth-child(3) {
+    animation-delay: 0.9s;
+}
