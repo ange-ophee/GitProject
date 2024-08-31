@@ -98,3 +98,7 @@ header {
 .event-card:nth-child(3) {
     animation-delay: 0.9s;
 }
+
+img {
+    background-size: cover;
+}

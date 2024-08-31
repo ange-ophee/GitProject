@@ -10,13 +10,15 @@ header{
 body {
     background-image: url(img/Brrrr.jpg);
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .box{
     background-color: white;
     border-radius: 10px;
     width: 300px;
-    height: 425px;
+    height: 520px;
     text-align: center;
 }
 
